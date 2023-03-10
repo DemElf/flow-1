@@ -9,11 +9,15 @@ p {
   margin: 0;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 .list {
   list-style: none;
 }
 
-link {
+.link {
   text-decoration: none;
 }
 
