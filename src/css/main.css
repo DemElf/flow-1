@@ -1,0 +1,33 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+/* =======UTILS======= */
+@import url('./utils/variables.css');
+@import url('./utils/visually-hidden.css');
+/* =======//UTILS//======= */
+
+/* =======BASE======= */
+@import url('./base/reset.css');
+@import url('./base/common.css');
+/* =======//BASE//======= */
+
+/* =======COMPONENTS======= */
+@import url('./components/buttons.css');
+@import url('./components/container.css');
+@import url('./components/titles.css');
+/* =======//COMPONENTS//======= */
+
+/* =======LAYOUT======= */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about.css');
+@import url('./layout/store.css');
+@import url('./layout/delivery.css');
+@import url('./layout/blog.css');
+@import url('./layout/footer.css');
+@import url('./layout/modals.css');
+/* =======//LAYOUT//======= */
