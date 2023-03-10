@@ -1,0 +1,15 @@
+.buttons {
+  align-items: center;
+  padding: 14px 28px;
+  width: 208px;
+  background: #e86f54;
+  border-radius: 38px;
+  color: #fff; /*Потрібно добавити колір через змінну */
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    width: 280px;
+    padding: 16px 32px;
+  }
+}
