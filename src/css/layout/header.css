@@ -4,7 +4,6 @@
 .header-box {
   display: flex;
   align-items: center;
-  /* space-between for good sizing */
   justify-content: space-between;
 }
 
@@ -46,8 +45,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* padding-left: 110px;
-  padding-right: 110px; */
   background-color: var(--main-background-color);
   z-index: 999;
 
@@ -79,9 +76,8 @@
   margin-bottom: 26px;
 }
 .mobile-menu-link {
-  font-weight: 400;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: calc(24 / 20);
   color: var(--main-white-color);
 }
 
