@@ -2,12 +2,12 @@
   align-items: center;
   padding: 14px 28px;
   width: 208px;
-  background: #e86f54;
+  background: #e86f54; /*Потрібно добавити колір через змінну */
   border-radius: 38px;
   border: none;
   display: block;
   margin: 0 auto;
-  color: #fff; /*Потрібно добавити колір через змінну */
+  color: #fff;
   font-weight: 500;
   font-size: 18px;
   line-height: calc(18 / 24);
