@@ -1,6 +1,7 @@
 .container {
-    padding: 0 16px;
- }
+  min-width: 320px;
+  padding: 0 16px;
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 448px;
@@ -11,6 +12,7 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 752px;
+    padding: 0 24px;
   }
 }
 /* desctop */
