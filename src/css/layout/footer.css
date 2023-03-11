@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 32px;
+  justify-content: space-between;
   background-color: var(--main-black-color);
   color: var(--main-white-color);
   padding-top: 32px;
@@ -10,14 +10,21 @@
 }
 
 .footer-box {
-  width: 128px;
+  width: 148px;
 }
-
+.footer-logo-link {
+  display: none;
+}
 .footer-title {
   color: var(--main-white-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
   margin-bottom: 18px;
 }
+.footer-nav-link,
 .footer-item {
+  color: var(--main-white-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -40,7 +47,8 @@
   gap: 14px;
   margin: 0;
 }
-/* svg styles ----------------*/
+
+/* svg styles ----------------------*/
 .logo-facebook {
   width: 28px;
   height: 28px;
@@ -53,4 +61,55 @@
   stroke: var(--main-white-color);
   stroke-width: 2px;
 }
-/* -------------------------- */
+
+/* Tablet -- */
+@media screen and (min-width: 768px) {
+  .footer-box {
+    width: 156px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .footer-nav-link,
+  .footer-item {
+    font-size: 16px;
+  }
+  .sm-icon-list {
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-end;
+  }
+}
+
+/* Desktop version -- */
+@media screen and (min-width: 1280px) {
+  .footer {
+    justify-content: normal;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  .footer-logo-link {
+    display: inline;
+  }
+  .logo-footer-icon {
+    fill: var(--main-white-color);
+    width: 72px;
+    height: 57px;
+  }
+  .footer-nav-box {
+    width: 116px;
+    margin-left: 210px;
+  }
+  .footer-time-box {
+    width: 143px;
+    margin-left: 96px;
+  }
+  .footer-contact-box {
+    width: 237px;
+    margin-left: 96px;
+  }
+  .footer-sm-box {
+    width: 29px;
+    margin-left: 208px;
+  }
+}
