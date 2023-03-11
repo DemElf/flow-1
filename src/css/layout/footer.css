@@ -5,6 +5,8 @@
   background-color: var(--main-black-color);
   color: var(--main-white-color);
   padding-top: 32px;
+  padding-bottom: 32px;
+  /* font-family: "Inter"; */
 }
 
 .footer-box {
