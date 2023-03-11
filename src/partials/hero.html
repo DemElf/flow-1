@@ -1,3 +1,83 @@
-<section class="container">
-    <h1>hero</h1>
+<!-- hero-section -->
+<section class="hero-section">
+  <div class="hero-section__container container">
+    <h1 class="hero-section__title" style="--shift-to-y: -355px">ANEMONE</h1>
+    <h2
+      class="hero-section__subtitle"
+      style="--shift-from-x: 0; --shift-to-x: -90px; --shift-to-y: 177px"
+    >
+      flower studio
+    </h2>
+    <button
+      class="hero-section__btn"
+      type="button"
+      style="--shift-from-x: 0; --shift-to-x: 25px; --shift-to-y: 177px"
+    >
+      <svg class="hero-section__svg" width="" height="">
+        <use href="../img/icons.svg#icon-btn-txt"></use>
+        <use href="../img/icons.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-section__thumb">
+    <picture>
+      <source
+        srcset="
+          ../img/hero-image-desktop.webp    1x,
+          ../img/hero-image-desktop@2x.webp 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ../img/hero-image-desktop.jpg    1x,
+          ../img/hero-image-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/jpeg"
+      />
+
+      <source
+        srcset="
+          ../img/hero-image-tablet.webp    1x,
+          ../img/hero-image-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ../img/hero-image-tablet.png    1x,
+          ../img/hero-image-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <source
+        srcset="
+          ../img/hero-image-mobile.webp    1x,
+          ../img/hero-image-mobile@2x.webp 2x
+        "
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ../img/hero-image-mobile.png    1x,
+          ../img/hero-image-mobile@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        class="hero-section__img"
+        src="../img/hero-image-desktop.jpg"
+        alt="Flower studio preview"
+      />
+    </picture>
+  </div>
 </section>
