@@ -20,3 +20,9 @@
     line-height: calc(24 / 28);
   }
 }
+.buttons:hover {
+  background-color: var(--hover-button-color);
+}
+.buttons:focus {
+  background-color: var(--focus-button-color);
+}
