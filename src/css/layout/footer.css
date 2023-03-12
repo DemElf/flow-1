@@ -6,7 +6,7 @@
   color: var(--main-white-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  /* font-family: "Inter"; */
+  font-family: 'Inter', sans-serif;
 }
 
 .footer-box {
@@ -23,7 +23,7 @@
   line-height: 1.2;
 }
 .footer-item:not(:last-child) {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 .footer-list {
   padding: 0;
@@ -40,3 +40,17 @@
   gap: 14px;
   margin: 0;
 }
+/* svg styles ----------------*/
+.logo-facebook {
+  width: 28px;
+  height: 28px;
+  stroke: var(--main-white-color);
+  stroke-width: 2px;
+}
+.logo-instagram {
+  width: 28px;
+  height: 28px;
+  stroke: var(--main-white-color);
+  stroke-width: 2px;
+}
+/* -------------------------- */
