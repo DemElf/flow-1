@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  background-color: var(--main-black-color);
+  color: var(--main-white-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-box {
+  width: 128px;
+}
+
+.footer-title {
+  color: var(--main-white-color);
+  margin-bottom: 18px;
+}
+.footer-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer-list {
+  padding: 0;
+}
+.footer-work-time {
+  width: 85px;
+}
+.footer-contact-link {
+  color: var(--main-white-color);
+}
+
+.sm-icon-list {
+  display: flex;
+  gap: 14px;
+  margin: 0;
+}
+/* svg styles ----------------*/
+.logo-facebook {
+  width: 28px;
+  height: 28px;
+  stroke: var(--main-white-color);
+  stroke-width: 2px;
+}
+.logo-instagram {
+  width: 28px;
+  height: 28px;
+  stroke: var(--main-white-color);
+  stroke-width: 2px;
+}
+/* -------------------------- */
