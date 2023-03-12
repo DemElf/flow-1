@@ -1,11 +1,23 @@
 .container {
-    width: 100%;
-    /* margin: 0 auto; */
-    padding: 0 16px;
- }
+  min-width: 320px;
+  padding: 0 16px;
+}
 @media screen and (min-width: 480px) {
   .container {
-    width: 320;
+    width: 448px;
     margin: 0 auto;
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 752px;
+    padding: 0 24px;
+  }
+}
+/* desctop */
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1264px;
   }
 }

@@ -1,27 +1,3 @@
-/* common */
-button {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-svg {
-  display: block;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding: 0 24px;
-  }
-}
-/* common end */
-
 /* hero-section */
 .hero-section {
   position: relative;
@@ -119,6 +95,7 @@ svg {
 }
 
 .hero-section__btn {
+  background-color: transparent;
   margin-top: 65px;
   width: 64px;
   height: 64px;
