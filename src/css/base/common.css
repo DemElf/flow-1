@@ -1,5 +1,23 @@
 .container {
-    width: 320px;
+  min-width: 320px;
+  padding: 0 16px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
     margin: 0 auto;
-    padding: 0 16px;
   }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 752px;
+    padding: 0 24px;
+  }
+}
+/* desctop */
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1264px;
+  }
+}

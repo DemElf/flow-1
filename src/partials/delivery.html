@@ -1,36 +1,46 @@
 <section>
   <div class="container">
     <h2 class="titles">DELIVERY</h2>
-    <div class="delivery-wrap">
       <ul class="delivery-list">
         <li class="delivery-item">
+          <h3 class="number">1</h3>
           <p class="delivery-text">
             Choose your bouquet and make an order on website
           </p>
         </li>
         <li class="delivery-item">
+          <h3 class="number">2</h3>
           <p class="delivery-text">
             Wait for the call to clarify the details of the order. You can pay
             online or to the courier
           </p>
         </li>
         <li class="delivery-item">
+          <h3 class="number">3</h3>
           <p class="delivery-text">
             Wait for the delivery at the selected time or pick up the order from
             the store
           </p>
         </li>
         <li class="delivery-item">
+          <h3 class="number">4</h3>
           <p class="delivery-text">Make someone happy or enjoy yourself</p>
         </li>
       </ul>
-    </div>
-  </div>
-  <img
-    class="delivery-img"
-    srcset="./img/delivery-mobile@2x.jpg 2x"
-    src="./img/delivery-mobile.jpg"
-    alt=""
-    width="320"
+  <picture class="delivery-picture">
+    <source
+    srcset="./img/delivery-desktop.jpg 1x, ./img/delivery-desktop@2x.jpg 2x"
+    media="(min-width: 1280px)"
   />
+    <source
+      srcset="./img/delivery-tablet.jpg 1x, ./img/delivery-tablet@2x.jpg 2x"
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="./img/delivery-mobile.jpg 1x, ./img/delivery-mobile@2x.jpg 2x"
+      media="(max-width: 480px)"
+    />
+    <img src="./img/delivery-mobile.jpg" alt="" />
+  </picture>
+  </div>
 </section>
