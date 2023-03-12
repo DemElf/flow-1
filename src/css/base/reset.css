@@ -23,6 +23,11 @@ p:last-child {
 
 button {
   cursor: pointer;
+  border: none;
+}
+
+svg {
+  display: block;
 }
 
 img {
