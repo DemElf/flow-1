@@ -25,7 +25,7 @@ svg {
 /* hero-section */
 .hero-section {
   position: relative;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   max-width: 1280px;
   height: 405px;
   padding-top: 16px;
@@ -143,62 +143,62 @@ svg {
   }
 }
 
-[href='../img/icons.svg#icon-hero-txt-mobile'] {
+[href='./img/icons.svg#icon-hero-txt-mobile'] {
   transform-origin: center;
   animation: infinity-rotate 30s linear 2s infinite;
 }
 
 @media (min-width: 768px) {
-  [href='../img/icons.svg#icon-hero-txt-mobile'] {
+  [href='./img/icons.svg#icon-hero-txt-mobile'] {
     display: none;
   }
 }
 
-.hero-section__btn:hover [href='../img/icons.svg#icon-hero-txt-mobile'],
-.hero-section__btn:focus [href='../img/icons.svg#icon-hero-txt-mobile'] {
+.hero-section__btn:hover [href='./img/icons.svg#icon-hero-txt-mobile'],
+.hero-section__btn:focus [href='./img/icons.svg#icon-hero-txt-mobile'] {
   animation-play-state: paused;
 }
 
-[href='../img/icons.svg#icon-hero-txt-tablet'] {
+[href='./img/icons.svg#icon-hero-txt-tablet'] {
   display: none;
   transform-origin: center;
   animation: infinity-rotate 30s linear 2s infinite;
 }
 
 @media (min-width: 768px) and (max-width: 1279px){
-  [href='../img/icons.svg#icon-hero-txt-tablet'] {
+  [href='./img/icons.svg#icon-hero-txt-tablet'] {
     display: block;
   }
 }
 
-.hero-section__btn:hover [href='../img/icons.svg#icon-hero-txt-tablet'],
-.hero-section__btn:focus [href='../img/icons.svg#icon-hero-txt-tablet'] {
+.hero-section__btn:hover [href='./img/icons.svg#icon-hero-txt-tablet'],
+.hero-section__btn:focus [href='./img/icons.svg#icon-hero-txt-tablet'] {
   animation-play-state: paused;
 }
 
-[href='../img/icons.svg#icon-hero-txt-desktop'] {
+[href='./img/icons.svg#icon-hero-txt-desktop'] {
   transform-origin: center;
   animation: infinity-rotate 30s linear 2s infinite;
 }
 
 @media (max-width: 1279px) {
-  [href='../img/icons.svg#icon-hero-txt-desktop'] {
+  [href='./img/icons.svg#icon-hero-txt-desktop'] {
     display: none;
   }
 }
 
-.hero-section__btn:hover [href='../img/icons.svg#icon-hero-txt-desktop'],
-.hero-section__btn:focus [href='../img/icons.svg#icon-hero-txt-desktop'] {
+.hero-section__btn:hover [href='./img/icons.svg#icon-hero-txt-desktop'],
+.hero-section__btn:focus [href='./img/icons.svg#icon-hero-txt-desktop'] {
   animation-play-state: paused;
 }
 
-[href='../img/icons.svg#icon-hero-arrow'] {
+[href='./img/icons.svg#icon-hero-arrow'] {
   transform-origin: center;
   transition: transform 500ms ease-out;
 }
 
-.hero-section__btn:hover [href='../img/icons.svg#icon-hero-arrow'],
-.hero-section__btn:focus [href='../img/icons.svg#icon-hero-arrow'] {
+.hero-section__btn:hover [href='./img/icons.svg#icon-hero-arrow'],
+.hero-section__btn:focus [href='./img/icons.svg#icon-hero-arrow'] {
   transform: rotate(-122deg);
 }
 
