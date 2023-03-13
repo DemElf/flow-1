@@ -1,0 +1,49 @@
+.delivery-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.2;
+  list-style-type: none;
+  counter-increment: list;
+  margin-bottom: 14px;
+}
+
+.delivery-item::before {
+  content: counter(list);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding-top: 8px;
+  margin-right: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  border: 1px solid var(--main-black-color);
+  border-radius: 50%;
+}
+
+.delivery-item:last-child {
+  margin-bottom: 0;
+}
+
+.delivery-wrap {
+  margin-top: 32px;
+  margin-bottom: 26px;
+}
+
+.delivery-list {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.delivery-text {
+  display: block;
+  max-width: 232px;
+}
+
+.delivery-img {
+  margin: 0 auto;
+  min-width: 100%;
+}
+
+
