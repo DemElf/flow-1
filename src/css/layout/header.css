@@ -1,5 +1,7 @@
 .header {
   padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .header-box {
   display: flex;
@@ -61,7 +63,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: var(--main-white-color);
+  /* color: var(--main-white-color); */
 }
 
 .mobile-menu-list {
@@ -86,9 +88,7 @@
 .modal-btn {
   padding: 12px;
 }
-.close-icon {
-  fill: #fff;
-}
+
 /* for tablet and descktop */
 @media (min-width: 768px) {
   .burger-menu-btn {
@@ -108,7 +108,8 @@
   width: 24px;
   height: 24px;
 }
-.close-icon {
+.x-icon {
+  fill: #fff;
   width: 12px;
   height: 12px;
 }
@@ -117,6 +118,8 @@
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .header-nav-list {
     display: flex;
@@ -156,4 +159,7 @@
   .header-nav-list {
     gap: 48px;
   }
+
+
+
 }
