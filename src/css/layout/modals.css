@@ -1,0 +1,277 @@
+.backdrop,
+.modal-result,
+.modal-follow {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-contact-wrap,
+.modal-result-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 272px;
+  height: 357px;
+  background-color: #fff;
+  padding: 28px 16px;
+}
+
+.close-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: inherit;
+}
+
+.modal-contact-title {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.modal-contact-text {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  max-width: 240px;
+  color: #5c5c5c;
+  margin-bottom: 18px;
+}
+
+/* =======Active mobile form and validation ========*/
+
+.user-name,
+.user-mail {
+  display: block;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  letter-spacing: 0.01rem;
+
+  color: #5c5c5c;
+  margin-bottom: 8px;
+}
+
+.input-name {
+  width: 100%;
+  height: 35px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #111111;
+  padding: 0 12px;
+  margin-bottom: 14px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
+
+.input-mail {
+  width: 100%;
+  height: 35px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc (15/12);
+  color: #111111;
+  padding: 0;
+  padding: 0 12px;
+  margin-bottom: 24px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
+
+.input-name::placeholder,
+.input-mail::placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.input-name:focus,
+.input-mail:focus {
+  outline: 1px solid rgba(17, 17, 17, 0.7);
+  border-radius: 4px;
+  border: none;
+}
+
+.modal-form-btn {
+  width: 100%;
+  background-color: rgba(232, 111, 84, 0.4);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Modal Thank you  */
+
+.modal-result {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-result-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 272px;
+  height: 357px;
+  background-color: #fff;
+  padding: 32px 16px;
+}
+
+.close-btn {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.close-icon {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.result-img {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 188px;
+  height: 142px;
+}
+
+.title-result {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: 0.01rem;
+  margin-bottom: 14px;
+}
+
+.answer-result {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  text-align: center;
+  letter-spacing: 0.03rem;
+  color: #5c5c5c;
+  margin-bottom: 18px;
+}
+.modal-form-btn {
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+
+  text-align: center;
+  color: #ffffff;
+  background: #e86f54;
+  border-radius: 8px;
+  padding: 10px 0;
+  border: none;
+}
+
+/* Modal Follow */
+
+.modal-follow-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 272px;
+  height: 357px;
+  background-color: #fff;
+}
+
+.modal-follow-wrap {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-follow-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.result-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7d5e2;
+}
+
+.content-modal-follow {
+  padding: 18px 16px 28px 16px;
+}
+
+.modal-follow-title {
+  display: block;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: calc(23 / 19);
+  text-align: center;
+  margin-bottom: 14px;
+}
+.follow-answer {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.02rem;
+  text-align: center;
+  color: #5c5c5c;
+  margin-bottom: 18px;
+}
+
+.user-mail {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  color: #5c5c5c;
+  margin-bottom: 8px;
+}
+
+.input-mail-follow {
+  width: 100%;
+  height: 35px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc (15/12);
+  color: #111111;
+  padding: 0;
+  padding: 0 12px;
+  margin-bottom: 24px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
