@@ -140,7 +140,7 @@
   width: 272px;
   height: 357px;
   background-color: #fff;
-  padding: 32px 16px;
+  padding: 44px 16px 32px 16px;
 }
 
 .close-btn {
@@ -161,7 +161,6 @@
 }
 
 .result-img {
-  margin-top: 12px;
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -247,7 +246,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: calc(16 / 12);
-  letter-spacing: 0.02rem;
+  /* letter-spacing: 0.0rem; */
   text-align: center;
   color: #5c5c5c;
   margin-bottom: 18px;

@@ -1,10 +1,10 @@
 <!-- Modal "Contact us"  -->
 
-<div class="backdrop">
+<div class="backdrop" hidden>
   <div class="modal-contact-wrap">
     <button class="close-btn-icon">
       <svg class="close-icon" width="12" height="12">
-        <use href="../img/icons.svg#icon-close-button"></use>
+        <use href="./img/icons.svg#icon-close-button"></use>
       </svg>
     </button>
     <strong class="modal-contact-title">Contact us</strong>
@@ -15,21 +15,21 @@
     </p>
     <!-- Modal form -->
     <form action="" class="modal-form" name="modal-form">
-      <label for="user_name" class="user-name">Name</label>
+      <label for="user_name_id" class="user-name">Name</label>
       <input
         type="text"
         class="input-name"
-        id="user_name"
+        id="user_name_id"
         name="user-name"
         placeholder="Kristin Watson"
         required
       />
-      <label for="user_email" class="user-mail">Email</label>
+      <label for="user_email_id" class="user-mail">Email</label>
       <input
         type="email"
         class="input-mail"
         name="user-mail"
-        id="user_email"
+        id="user_email_id"
         placeholder="tanya.hill@example.com"
         required
       />
@@ -44,12 +44,12 @@
   <div class="modal-result-wrap">
     <button class="close-btn-icon">
       <svg class="close-icon" width="12" height="12">
-        <use href="../img/icons.svg#icon-close-button"></use>
+        <use href="./img/icons.svg#icon-close-button"></use>
       </svg>
     </button>
     <img
       class="result-img"
-      src="../img/modal/thank-you-photo.png"
+      src="./img/modal/thank-you-photo.png"
       alt="Grateful flowers"
       width="188px"
     />
@@ -63,17 +63,18 @@
 
 <!-- Modal Follow -->
 
-<div class="modal-follow" hidden>
+<div class="modal-follow">
   <div class="modal-follow-wrap">
     <div class="modal-follow-img">
       <img
         src="../img/modal/Flowers-follow.jpg"
         alt="Flowers"
         class="modal-follow-img"
+        width="272px"
       />
       <button class="close-btn-icon">
         <svg class="result-btn-icon" width="12" height="12">
-          <use href="../img/icons.svg#icon-close-button"></use>
+          <use href="./img/icons.svg#icon-close-button"></use>
         </svg>
       </button>
     </div>
@@ -85,12 +86,12 @@
         directly in your box.
       </p>
       <form class="modal-email" name="modal-form">
-        <label for="user_email" class="user-mail">Email</label>
+        <label for="user_email_follow" class="user-mail">Email</label>
         <input
           type="email"
           class="input-mail"
           name="user-mail"
-          id="user_email"
+          id="user_email_follow"
           placeholder="Your email"
           required
         />
