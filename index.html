@@ -32,11 +32,113 @@
     
     
     <script type="module" crossorigin src="/flow-1/assets/index-3fb4e1b3.js"></script>
-    <link rel="stylesheet" href="/flow-1/assets/index-8917da9a.css">
+    <link rel="stylesheet" href="/flow-1/assets/index-7b0bee73.css">
   </head>
   <body>
     <!-- =======modal======= -->
-    
+    <!-- Modal "Contact us"  -->
+
+<div class="backdrop" hidden>
+  <div class="modal-contact-wrap">
+    <button class="close-btn-icon">
+      <svg class="close-icon" width="12" height="12">
+        <use href="/flow-1/assets/icons-6c730830.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <strong class="modal-contact-title">Contact us</strong>
+    <p class="modal-contact-text">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <!-- Modal form -->
+    <form action="" class="modal-form" name="modal-form">
+      <label for="user_name_id" class="user-name">Name</label>
+      <input
+        type="text"
+        class="input-name"
+        id="user_name_id"
+        name="user-name"
+        placeholder="Kristin Watson"
+        required
+      />
+      <label for="user_email_id" class="user-mail">Email</label>
+      <input
+        type="email"
+        class="input-mail"
+        name="user-mail"
+        id="user_email_id"
+        placeholder="tanya.hill@example.com"
+        required
+      />
+      <button class="modal-form-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Thank you -->
+
+<div class="modal-result" hidden>
+  <div class="modal-result-wrap">
+    <button class="close-btn-icon">
+      <svg class="close-icon" width="12" height="12">
+        <use href="/flow-1/assets/icons-6c730830.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <img
+      class="result-img"
+      src="/flow-1/assets/thank-you-photo-b8111875.png"
+      alt="Grateful flowers"
+      width="188px"
+    />
+    <strong class="title-result">Thank you!</strong>
+    <p class="answer-result">
+      We have received your contact details and will reach you soon.
+    </p>
+    <button class="modal-form-btn" type="submit">Continue</button>
+  </div>
+</div>
+
+<!-- Modal Follow -->
+
+<div class="modal-follow">
+  <div class="modal-follow-wrap">
+    <div class="modal-follow-img">
+      <img
+        src="../img/modal/Flowers-follow.jpg"
+        alt="Flowers"
+        class="modal-follow-img"
+        width="272px"
+      />
+      <button class="close-btn-icon">
+        <svg class="result-btn-icon" width="12" height="12">
+          <use href="/flow-1/assets/icons-6c730830.svg#icon-close-button"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="content-modal-follow">
+      <strong class="modal-follow-title">Follow to our newsletter</strong>
+      <p class="follow-answer">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+      <form class="modal-email" name="modal-form">
+        <label for="user_email_follow" class="user-mail">Email</label>
+        <input
+          type="email"
+          class="input-mail"
+          name="user-mail"
+          id="user_email_follow"
+          placeholder="Your email"
+          required
+        />
+        <button class="modal-form-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>
+
 
     <!-- =======header======= -->
     <!-- HEADER--------------------------------------------------------------------------------------->
@@ -44,12 +146,12 @@
   <div class="header-box">
     <a class="header-link" href="./index.html">
       <svg class="logo-icon">
-        <use href="/flow-1/assets/icons-b901fe5b.svg#icon-logo"></use></svg
+        <use href="/flow-1/assets/icons-6c730830.svg#icon-logo"></use></svg
     ></a>
     <div class="header-link-box">
       <a class="header-tel-link link" href="tel:+380631234567"
         ><svg class="logo-tel">
-          <use href="/flow-1/assets/icons-b901fe5b.svg#icon-tel"></use></svg
+          <use href="/flow-1/assets/icons-6c730830.svg#icon-tel"></use></svg
       ></a>
       <!-- burger btn for mobile menu-->
       <button
@@ -59,7 +161,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="burger-menu-icon">
-          <use href="/flow-1/assets/icons-b901fe5b.svg#icon-burger"></use>
+          <use href="/flow-1/assets/icons-6c730830.svg#icon-burger"></use>
         </svg>
       </button>
     </div>
@@ -69,7 +171,7 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="modal-btn menu-toggle js-close-menu">
     <svg class="close-icon">
-      <use href="/flow-1/assets/icons-b901fe5b.svg#icon-close-cross"></use>
+      <use href="/flow-1/assets/icons-6c730830.svg#icon-close-cross"></use>
     </svg>
   </button>
   <!-- mob-menu list --->
@@ -119,10 +221,10 @@
       style="--shift-from-x: 0; --shift-to-x: 25px; --shift-to-y: 177px"
     >
       <svg class="hero-section__svg" width="" height="">
-        <use href="/flow-1/assets/icons-b901fe5b.svg#icon-hero-txt-mobile"></use>
-        <use href="/flow-1/assets/icons-b901fe5b.svg#icon-hero-txt-tablet"></use>
-        <use href="/flow-1/assets/icons-b901fe5b.svg#icon-hero-txt-desktop"></use>
-        <use href="/flow-1/assets/icons-b901fe5b.svg#icon-hero-arrow"></use>
+        <use href="/flow-1/assets/icons-6c730830.svg#icon-hero-txt-mobile"></use>
+        <use href="/flow-1/assets/icons-6c730830.svg#icon-hero-txt-tablet"></use>
+        <use href="/flow-1/assets/icons-6c730830.svg#icon-hero-txt-desktop"></use>
+        <use href="/flow-1/assets/icons-6c730830.svg#icon-hero-arrow"></use>
       </svg>
     </button>
   </div>
@@ -477,12 +579,12 @@
   <div class="btn-wrap">
     <button class="prev-btn blog-slider-btn">
       <svg class="svg-arrow" width="60px" height="60px">
-        <use href="/flow-1/assets/icons-b901fe5b.svg#arrow-left"></use>
+        <use href="/flow-1/assets/icons-6c730830.svg#arrow-left"></use>
       </svg>
     </button>
     <button class="next-btn blog-slider-btn">
       <svg class="svg-arrow" width="60px" height="60px">
-        <use href="/flow-1/assets/icons-b901fe5b.svg#arrow-right"></use>
+        <use href="/flow-1/assets/icons-6c730830.svg#arrow-right"></use>
       </svg>
     </button>
   </div>
