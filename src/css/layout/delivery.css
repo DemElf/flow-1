@@ -1,49 +1,91 @@
-.delivery-item {
-  display: inline-flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: 1.2;
-  list-style-type: none;
-  counter-increment: list;
-  margin-bottom: 14px;
+/* delivery-section */
+.section-delivery {
+  padding-bottom: 60px;
 }
 
-.delivery-item::before {
-  content: counter(list);
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding-top: 8px;
-  margin-right: 8px;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  border: 1px solid var(--main-black-color);
-  border-radius: 50%;
+@media screen and (min-width: 768px) {
+  .section-delivery {
+    padding-bottom: 100px;
+  }
+}
+
+.delivery-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 0;
+  gap: 14px;
+}
+
+.delivery-item {
+  display: flex;
+  align-items: center;
 }
 
 .delivery-item:last-child {
   margin-bottom: 0;
 }
 
-.delivery-wrap {
-  margin-top: 32px;
-  margin-bottom: 26px;
-}
-
-.delivery-list {
-  padding: 0;
-  margin: 0 auto;
+.number {
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  padding: 8px 16px;
+  border: 1px solid var(--main-black-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
 }
 
 .delivery-text {
-  display: block;
-  max-width: 232px;
+  text-align: start;
+  font-size: 14px;
+  line-height: calc(17 / 14);
 }
 
-.delivery-img {
-  margin: 0 auto;
-  min-width: 100%;
+.delivery-picture img {
+  width: calc(100% + 32px);
+  margin-top: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .delivery-list {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
 
+  .delivery-text {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+
+  .number {
+    font-size: 26px;
+    line-height: calc(32 / 26);
+    padding: 16px 27px;
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+  }
+
+  .delivery-text {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .delivery-list {
+    margin-left: 72px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .delivery-text {
+    font-size: 32px;
+    line-height: calc(39 / 32);
+  }
+}
