@@ -1,6 +1,6 @@
 /* Montserrat */
 @font-face {
-  font-family: 'Montserrat, sans-serif ';
+  font-family: 'Montserrat';
   src: url(/src/fonts/Montserrat-Medium.woff2),
        url(/src/fonts/Montserrat-Regular.woff);
   font-weight: 400;
@@ -8,7 +8,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat, sans-serif ';
+  font-family: 'Montserrat';
   src: url(/src/fonts/Montserrat-Medium.woff2),
        url(/src/fonts/Montserrat-Medium.woff);
   font-weight: 500;
@@ -16,7 +16,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat, sans-serif ';
+  font-family: 'Montserrat';
   src: url(/src/fonts//Montserrat-SemiBold.woff2),
        url(/src/fonts/Montserrat-SemiBold.woff);
   font-weight: 600;
@@ -24,7 +24,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat, sans-serif ';
+  font-family: 'Montserrat';
   src: url(/src/fonts/Montserrat-Bold.woff2),
        url(/src/fonts/Montserrat-Bold.woff);
   font-weight: 700;
@@ -34,7 +34,7 @@
 
 /* Inter */
 @font-face {
-  font-family: 'Inter, sans-serif ';
+  font-family: 'Inter';
   src: url(/src/fonts/Inter-Medium.woff2),
        url(/src/fonts/Inter-Medium.woff);
   font-weight: 500;
@@ -42,7 +42,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Inter, sans-serif ';
+  font-family: 'Inter';
   src: url(/src/fonts/Inter-Bold.woff2),
        url(/src/fonts/Inter-Bold.woff);
   font-weight: 700;
