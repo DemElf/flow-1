@@ -1,15 +1,15 @@
 .store-container {
-        margin-bottom: 60px;
+        padding-bottom: 60px;
     }
 
 @media screen and (min-width: 768px){
 .store-container {
-margin-bottom: 80px;
+padding-bottom: 80px;
 }}
 
 @media screen and (min-width: 1280px) {
     .store-container {
-        margin-bottom: 60px;
+        padding-bottom: 60px;
     }}
 
 .store-title {
