@@ -182,13 +182,13 @@
   animation-play-state: paused;
 }
 
-[href='./img/hero-btn.svg#icon-hero-arrow'] {
+.hero-section__icon-arrow {
   transform-origin: center;
   transition: transform 500ms ease-out;
 }
 
-.hero-section__btn:hover .hero-siction__icon-arrow,
-.hero-section__btn:focus .hero-siction__icon-arrow {
+.hero-section__btn:hover .hero-section__icon-arrow,
+.hero-section__btn:focus .hero-section__icon-arrow {
   transform: rotate(-122deg);
 }
 
