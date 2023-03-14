@@ -1,20 +1,19 @@
 <!-- Modal "Contact us"  -->
 
-<div class="backdrop" hidden>
+<div class="backdrop is-hidden" data-contact-us>
   <div class="modal-contact-wrap">
-    <button class="close-btn-icon">
+    <button class="close-btn-icon" data-contact-us-close>
       <svg class="close-icon" width="12" height="12">
         <use href="./img/icons.svg#icon-close-button"></use>
       </svg>
     </button>
     <strong class="modal-contact-title">Contact us</strong>
-    <p class="modal-contact-text">
+    <h2 class="modal-contact-text">
       If you have any additional questions or you want to clarify something
       before you make an order please fill in your contact details. We will call
       you back.
-    </p>
-    <!-- Modal form -->
-    <form action="" class="modal-form" name="modal-form">
+    </h2>
+    <form action="" id="submit-form" class="modal-form" name="modal-form">
       <label for="user_name_id" class="user-name">Name</label>
       <input
         type="text"
@@ -22,6 +21,7 @@
         id="user_name_id"
         name="user-name"
         placeholder="Kristin Watson"
+        minlength="2"
         required
       />
       <label for="user_email_id" class="user-mail">Email</label>
@@ -31,18 +31,29 @@
         name="user-mail"
         id="user_email_id"
         placeholder="tanya.hill@example.com"
+        minlength="5"
         required
       />
-      <button class="modal-form-btn" type="submit">Send</button>
+      <button
+        class="modal-form-btn"
+        type="submit"
+        aria-required="true"
+        data-contact-us-close
+        data-result-contact-open
+        onclick="return false"
+        disabled
+      >
+        Send
+      </button>
     </form>
   </div>
 </div>
 
 <!-- Modal Thank you -->
 
-<div class="modal-result" hidden>
+<div class="modal-result is-hidden" data-result-contact>
   <div class="modal-result-wrap">
-    <button class="close-btn-icon">
+    <button class="close-btn-icon" data-follow-close>
       <svg class="close-icon" width="12" height="12">
         <use href="./img/icons.svg#icon-close-button"></use>
       </svg>
@@ -57,22 +68,49 @@
     <p class="answer-result">
       We have received your contact details and will reach you soon.
     </p>
-    <button class="modal-form-btn" type="submit">Continue</button>
+    <button
+      class="modal-form-btn"
+      type="submit"
+      data-result-contact-close
+      disabled
+    >
+      Continue
+    </button>
   </div>
 </div>
 
 <!-- Modal Follow -->
 
-<div class="modal-follow" hidden>
+<div class="modal-follow is-hidden" data-follow>
   <div class="modal-follow-wrap">
     <div class="modal-follow-img">
-      <img
-        src="../img/modal/Flowers-follow.jpg"
-        alt="Flowers"
-        class="modal-follow-img"
-        width="272px"
-      />
-      <button class="close-btn-icon">
+      <picture>
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./img/modal/img-desk428d.jpg 1x,
+            ./img/modal/img-desk856d.jpg 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/modal/img-tab588.jpg   578w,
+            ./img/modal/img-tab1176.jpg 1176w
+          "
+        />
+        <source
+          media="(max-width:767px)"
+          srcset="./img/modal/img-mob272.jpg 1x, ./img/modal/img-mob544.jpg 2x"
+        />
+        <img
+          class="modal-follow-img"
+          src="./img/modal/img-flow.jpg"
+          alt="Flowers"
+          width="272px"
+        />
+      </picture>
+      <button class="close-btn-icon" type="button" data-follow-close>
         <svg class="result-btn-icon" width="12" height="12">
           <use href="./img/icons.svg#icon-close-button"></use>
         </svg>
@@ -86,16 +124,16 @@
         directly in your box.
       </p>
       <form class="modal-email" name="modal-form">
-        <label for="user_email_follow" class="user-mail">Email</label>
+        <label for="user_email_follow" class="user-mail-follow">Email</label>
         <input
           type="email"
           class="input-mail"
-          name="user-mail"
+          name="user-mail-follow"
           id="user_email_follow"
           placeholder="Your email"
           required
         />
-        <button class="modal-form-btn" type="submit">Subscribe</button>
+        <button class="modal-form-btn" type="button" disabled>Subscribe</button>
       </form>
     </div>
   </div>
