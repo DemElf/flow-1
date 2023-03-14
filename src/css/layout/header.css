@@ -159,7 +159,24 @@
   .header-nav-list {
     gap: 48px;
   }
+  .header-nav-link, .logo-icon,.logo-tel {
+    animation-name: changeColor;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    animation-delay: 600ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
 
+@keyframes changeColor {
+  0% {
+    color: black;
+    fill: black;
+  }
 
-
+  100% {
+    color: white;
+    fill: #fff;
+  }
 }
