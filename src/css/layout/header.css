@@ -4,13 +4,14 @@
   z-index: 100;
   width: 100%;
 }
+
 .header-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 16px;
-  animation: changeColor 800ms linear 600ms 1 forwards;
+  animation: changeColor 1000ms ease-out 1000ms both;
 }
 .header-nav-list {
   display: none;
