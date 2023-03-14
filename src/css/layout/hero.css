@@ -187,8 +187,13 @@
   transition: transform 500ms ease-out;
 }
 
+<<<<<<< Updated upstream
 .hero-section__btn:hover [href='./img/hero-btn.svg#icon-hero-arrow'],
 .hero-section__btn:focus [href='./img/hero-btn.svg#icon-hero-arrow'] {
+=======
+.hero-section__btn:hover .hero-section__icon-arrow,
+.hero-section__btn:focus .hero-section__icon-arrow {
+>>>>>>> Stashed changes
   transform: rotate(-122deg);
 }
 
