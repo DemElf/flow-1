@@ -1,5 +1,7 @@
 .header {
   padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .header-box {
   display: flex;
@@ -61,7 +63,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: var(--main-white-color);
+  /* color: var(--main-white-color); */
 }
 
 .mobile-menu-list {
@@ -86,9 +88,7 @@
 .modal-btn {
   padding: 12px;
 }
-.close-icon {
-  fill: #fff;
-}
+
 /* for tablet and descktop */
 @media (min-width: 768px) {
   .burger-menu-btn {
@@ -108,7 +108,8 @@
   width: 24px;
   height: 24px;
 }
-.close-icon {
+.x-icon {
+  fill: #fff;
   width: 12px;
   height: 12px;
 }
@@ -117,6 +118,8 @@
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .header-nav-list {
     display: flex;
@@ -140,9 +143,40 @@
 /* Desktop version------------------- */
 @media screen and (min-width: 1280px) {
   .header {
+    width: 1280px;
     padding-top: 28px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+  }
+  .header-box {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .header-nav-list {
     gap: 48px;
+  }
+  .header-nav-link, .logo-icon,.logo-tel {
+    animation-name: changeColor;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    animation-delay: 600ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: black;
+    fill: black;
+  }
+
+  100% {
+    color: white;
+    fill: #fff;
   }
 }
