@@ -133,52 +133,52 @@
   }
 }
 
-[href='./img/hero-btn.svg#icon-hero-txt-mobile'] {
+.hero-section__icon-txt-mobile {
   transform-origin: center;
   animation: infinity-rotate 30s linear 2s infinite;
 }
 
 @media (min-width: 768px) {
-  [href='./img/hero-btn.svg#icon-hero-txt-mobile'] {
+  .hero-section__icon-txt-mobile {
     display: none;
   }
 }
 
-.hero-section__btn:hover [href='./img/hero-btn.svg#icon-hero-txt-mobile'],
-.hero-section__btn:focus [href='./img/hero-btn.svg#icon-hero-txt-mobile'] {
+.hero-section__btn:hover .hero-section__icon-txt-mobile,
+.hero-section__btn:focus .hero-section__icon-txt-mobile {
   animation-play-state: paused;
 }
 
-[href='./img/hero-btn.svg#icon-hero-txt-tablet'] {
+.hero-section__icon-txt-tablet {
   display: none;
   transform-origin: center;
   animation: infinity-rotate 30s linear 2s infinite;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-  [href='./img/hero-btn.svg#icon-hero-txt-tablet'] {
+  .hero-section__icon-txt-tablet {
     display: block;
   }
 }
 
-.hero-section__btn:hover [href='./img/hero-btn.svg#icon-hero-txt-tablet'],
-.hero-section__btn:focus [href='./img/hero-btn.svg#icon-hero-txt-tablet'] {
+.hero-section__btn:hover .hero-section__icon-txt-tablet,
+.hero-section__btn:focus .hero-section__icon-txt-tablet {
   animation-play-state: paused;
 }
 
-[href='./img/hero-btn.svg#icon-hero-txt-desktop'] {
+.hero-section__icon-txt-desktop {
   transform-origin: center;
   animation: infinity-rotate 30s linear 2s infinite;
 }
 
 @media (max-width: 1279px) {
-  [href='./img/hero-btn.svg#icon-hero-txt-desktop'] {
+  .hero-section__icon-txt-desktop {
     display: none;
   }
 }
 
-.hero-section__btn:hover [href='./img/hero-btn.svg#icon-hero-txt-desktop'],
-.hero-section__btn:focus [href='./img/hero-btn.svg#icon-hero-txt-desktop'] {
+.hero-section__btn:hover .hero-section__icon-txt-desktop,
+.hero-section__btn:focus .hero-section__icon-txt-desktop {
   animation-play-state: paused;
 }
 
@@ -187,8 +187,8 @@
   transition: transform 500ms ease-out;
 }
 
-.hero-section__btn:hover [href='./img/hero-btn.svg#icon-hero-arrow'],
-.hero-section__btn:focus [href='./img/hero-btn.svg#icon-hero-arrow'] {
+.hero-section__btn:hover .hero-siction__icon-arrow,
+.hero-section__btn:focus .hero-siction__icon-arrow {
   transform: rotate(-122deg);
 }
 
