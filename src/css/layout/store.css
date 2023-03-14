@@ -1,17 +1,3 @@
-.store-container {
-        padding-bottom: 60px;
-    }
-
-@media screen and (min-width: 768px){
-.store-container {
-padding-bottom: 80px;
-}}
-
-@media screen and (min-width: 1280px) {
-    .store-container {
-        padding-bottom: 60px;
-    }}
-
 .store-title {
     margin-bottom: 32px;
 }
