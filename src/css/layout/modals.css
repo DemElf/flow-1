@@ -1,6 +1,7 @@
 .backdrop,
 .modal-result,
 .modal-follow {
+  z-index: 99;
   position: fixed;
   left: 0px;
   right: 0px;
@@ -8,6 +9,17 @@
   bottom: 0px;
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden,
+.modal-result.is-hidden,
+.modal-follow.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition-delay: 250ms;
 }
 
 .modal-contact-wrap,
@@ -17,9 +29,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 272px;
-  height: 357px;
+  height: auto;
   background-color: #fff;
   padding: 28px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-contact-wrap,
+  .modal-result-wrap {
+    width: 480px;
+    height: 511px;
+    padding: 48px 32px;
+  }
 }
 
 .close-btn-icon {
@@ -43,14 +64,33 @@
   font-size: 20px;
   margin-bottom: 14px;
 }
+
+@media screen and (min-width: 768px) {
+  .modal-contact-title {
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    margin-bottom: 24px;
+  }
+}
+
 .modal-contact-text {
-  font-family: sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(15 / 12);
-  max-width: 240px;
+  width: 240px;
   color: #5c5c5c;
+
   margin-bottom: 18px;
+  letter-spacing: 0.02rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-contact-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }
 
 /* =======Active mobile form and validation ========*/
@@ -62,14 +102,24 @@
   font-size: 10px;
   line-height: calc(12 / 10);
   letter-spacing: 0.01rem;
-
   color: #5c5c5c;
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .user-name {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+  .user-mail {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
 .input-name {
   width: 100%;
-  height: 35px;
+  min-height: 35px;
   font-weight: 500;
   font-size: 12px;
   color: #111111;
@@ -79,20 +129,40 @@
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .input-name {
+    margin-bottom: 24px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
 .input-mail {
+  display: block;
   width: 100%;
-  height: 35px;
+  min-height: 35px;
   font-weight: 500;
   font-size: 12px;
   line-height: calc (15/12);
   color: #111111;
-  padding: 0;
   padding: 0 12px;
   margin-bottom: 24px;
 
   border: 1px solid #d7d7d7;
   border-radius: 4px;
 }
+
+@media screen and (min-width: 768px) {
+  .input-mail {
+    padding: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
+/* Placeholder and hover, focus input */
 
 .input-name::placeholder,
 .input-mail::placeholder {
@@ -102,6 +172,24 @@
   color: rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (min-width: 768px) {
+  .input-name::placeholder,
+  .input-mail::placeholder {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .input-name::placeholder,
+  .input-mail::placeholder {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .input-name:focus,
 .input-mail:focus {
   outline: 1px solid rgba(17, 17, 17, 0.7);
@@ -109,15 +197,51 @@
   border: none;
 }
 
+/* Set buttons */
+
 .modal-form-btn {
   width: 100%;
-  background-color: rgba(232, 111, 84, 0.4);
   color: #ffffff;
   border-radius: 8px;
   padding: 10px 0;
   border: none;
-  padding: 0;
-  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+
+  text-align: center;
+  color: #ffffff;
+  background: #e86f54;
+  border-radius: 8px;
+  transition: transform 500ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .modal-form-btn {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    padding: 14px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-form-btn {
+  }
+}
+
+.modal-form-btn:hover {
+  background: #e25b41;
+  transition: #e25b41 250ms linear;
+}
+
+.modal-form-btn:focus {
+  background: #fa6f54;
+  box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+}
+.modal-form-btn:disabled {
+  background: rgba(232, 111, 84, 0.4);
+}
+
+.modal-form-btn:disabled {
+  background-color: rgba(232, 111, 84, 0.4);
 }
 
 /* Modal Thank you  */
@@ -187,35 +311,34 @@
   color: #5c5c5c;
   margin-bottom: 18px;
 }
-.modal-form-btn {
-  width: 100%;
-  font-weight: 600;
-  font-size: 14px;
-
-  text-align: center;
-  color: #ffffff;
-  background: #e86f54;
-  border-radius: 8px;
-  padding: 10px 0;
-  border: none;
-}
 
 /* Modal Follow */
 
 .modal-follow-wrap {
   position: absolute;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 272px;
-  height: 357px;
+  min-height: 357px;
   background-color: #fff;
 }
 
-.modal-follow-wrap {
-  height: 380px;
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .modal-follow-wrap {
+    width: 588px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-follow-wrap {
+    width: 860px;
+    flex-direction: row;
+  }
 }
 
 .modal-follow-img {
@@ -230,8 +353,26 @@
   background-color: #d7d5e2;
 }
 
+@media screen and (min-width: 1280px) {
+  .result-btn-icon {
+    background-color: #fff;
+  }
+}
+
 .content-modal-follow {
   padding: 18px 16px 28px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .content-modal-follow {
+    padding: 28px 118px 40px 118px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content-modal-follow {
+    padding: 112px 40px;
+  }
 }
 
 .modal-follow-title {
@@ -242,17 +383,37 @@
   text-align: center;
   margin-bottom: 14px;
 }
+
+@media screen and (min-width: 768px) {
+  .modal-follow-title {
+    display: block;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    margin-bottom: 24px;
+  }
+}
+
 .follow-answer {
   font-weight: 400;
   font-size: 12px;
   line-height: calc(16 / 12);
-  /* letter-spacing: 0.0rem; */
+  letter-spacing: 0.03rem;
   text-align: center;
   color: #5c5c5c;
   margin-bottom: 18px;
 }
 
-.user-mail {
+@media screen and (min-width: 768px) {
+  .follow-answer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    margin-bottom: 32px;
+  }
+}
+
+.user-mail-follow {
   font-weight: 500;
   font-size: 10px;
   line-height: calc(12 / 10);
@@ -273,4 +434,15 @@
 
   border: 1px solid #d7d7d7;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-mail-follow {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .input-mail-follow {
+    margin-bottom: 28px;
+  }
 }

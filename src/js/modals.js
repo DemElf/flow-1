@@ -2,9 +2,9 @@ document.addEventListener(
   'DOMContentLoaded',
   function () {
     const modals = [
-      'data-book-a-table',
-      'data-book-a-room',
-      'data-prices-per-room',
+      'data-contact-us',
+      'data-result-contact',
+      'data-follow',
     ];
     modals.forEach(element => {
       const openModalSelector = element + '-open';
