@@ -11,7 +11,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 16px;
-  animation: changeColor 1000ms ease-out 1000ms both;
+  animation: changeColor 1000ms ease-out 2000ms both;
 }
 .header-nav-list {
   display: none;
@@ -23,7 +23,7 @@
 }
 .header-nav-link {
   color: var(--main-black-color);
-  animation: changeColor 1000ms ease-out 1000ms both;
+  animation: changeColor 1000ms ease-out 2000ms both;
 }
 /* MOBILE MENU-- */
 .burger-menu-btn {
@@ -171,14 +171,15 @@
 }
 
 
-@keyframes changeColor {
-  0% {
-    color: black;
-    fill: black;
-  }
 
-  100% {
-    color: white;
+
+@keyframes changeColor {
+  from {
+    transform: translateX(0) translateY(-150%);
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    color: #fff;
     fill: #fff;
   }
 }
