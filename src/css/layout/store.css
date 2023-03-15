@@ -35,8 +35,8 @@
     }}
     
 .store-img {
- width: 100%;
- margin-bottom: 12px;
+    width: 100%;
+    margin-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,7 +50,14 @@
     .store-img {
         width: 600px;
         height: 542px;
-    }}
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+       }}
+
+@media screen and (min-width: 1280px){
+.store-img:hover, .store-img:focus {        
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        }}
 
 .store-subtitel {
     font-weight: 500;
