@@ -36,7 +36,7 @@
           name="user-mail"
           id="user_email_id"
           placeholder="tanya.hill@example.com"
-          minlength="5"
+          maxlength="15"
           required
         />
       </label>
@@ -149,7 +149,16 @@
           placeholder="Your email"
           required
         />
-        <button class="modal-form-btn button" type="submit">Subscribe</button>
+        <button
+          class="modal-form-btn button"
+          type="submit"
+          data-follow-close
+          data-result-contact-open
+          onclick="return false"
+          role="button"
+        >
+          Subscribe
+        </button>
       </form>
     </div>
   </div>
