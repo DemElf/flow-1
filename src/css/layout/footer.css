@@ -1,8 +1,11 @@
+.footer-section {
+background-color: var(--main-black-color);
+}
 .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--main-black-color);
+  
   color: var(--main-white-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -36,7 +39,7 @@
   padding: 0;
 }
 .footer-work-time {
-  width: 85px;
+  width: 90px;
 }
 .footer-contact-link {
   color: var(--main-white-color);
