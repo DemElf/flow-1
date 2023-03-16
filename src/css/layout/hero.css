@@ -282,8 +282,8 @@
   to {
     transform: translateX(var(--shift-to-x, -50%))
       translateY(var(--shift-to-y, 0));
-    color: #fff;
-    fill: #fff;
+    color: var(--main-white-color);
+    fill: var(--main-white-color);
   }
 }
 
@@ -294,8 +294,8 @@
   }
   to {
     transform: translateX(-50%) translateY(-340px);
-    color: #fff;
-    fill: #fff;
+    color: var(--main-white-color);
+    fill: var(--main-white-color);
   }
 }
 
@@ -305,8 +305,8 @@
   }
   to {
     transform: translateX(-45px) translateY(190px);
-    color: #fff;
-    fill: #fff;
+    color: var(--main-white-color);
+    fill: var(--main-white-color);
   }
 }
 
@@ -316,8 +316,8 @@
   }
   to {
     transform: translateX(0) translateY(190px);
-    color: #fff;
-    fill: #fff;
+    color: var(--main-white-color);
+    fill: var(--main-white-color);
   }
 }
 
@@ -328,8 +328,8 @@
   }
   to {
     transform: translateX(-50%) translateY(-175px);
-    color: #fff;
-    fill: #fff;
+    color: var(--main-white-color);
+    fill: var(--main-white-color);
   }
 }
 
@@ -339,8 +339,8 @@
   }
   to {
     transform: translateX(-11px) translateY(108px);
-    color: #fff;
-    fill: #fff;
+    color: var(--main-white-color);
+    fill: var(--main-white-color);
   }
 }
 
@@ -350,8 +350,8 @@
   }
   to {
     transform: translateX(0) translateY(108px);
-    color: #fff;
-    fill: #fff;
+    color: var(--main-white-color);
+    fill: var(--main-white-color);
   }
 }
 
