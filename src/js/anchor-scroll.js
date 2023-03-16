@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from 'зьjquery';
 
 $(document).ready(function () {
   // Add smooth scrolling to all links
