@@ -33,8 +33,8 @@
     
     <!-- анімація anchor-scroll.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script type="module" crossorigin src="/flow-1/assets/index-a4a0672d.js"></script>
-    <link rel="stylesheet" href="/flow-1/assets/index-77bd94bf.css">
+    <script type="module" crossorigin src="/flow-1/assets/index-38af5d0f.js"></script>
+    <link rel="stylesheet" href="/flow-1/assets/index-c1010e86.css">
   </head>
   <body>
     <!-- =======modal======= -->
@@ -53,35 +53,40 @@
       before you make an order please fill in your contact details. We will call
       you back.
     </h2>
-    <form action="" id="submit-form" class="modal-form" name="modal-form">
-      <label for="user_name_id" class="user-name">Name</label>
-      <input
-        type="text"
-        class="input-name"
-        id="user_name_id"
-        name="user-name"
-        placeholder="Kristin Watson"
-        minlength="2"
-        required
-      />
-      <label for="user_email_id" class="user-mail">Email</label>
-      <input
-        type="email"
-        class="input-mail"
-        name="user-mail"
-        id="user_email_id"
-        placeholder="tanya.hill@example.com"
-        minlength="5"
-        required
-      />
+    <form class="modal-form" name="modal-form">
+      <label for="user_name_id" class="user-name">
+        <span class="user-name">Name</span>
+        <input
+          type="text"
+          class="input-name input"
+          id="user_name_id"
+          name="user-name"
+          placeholder="Kristin Watson"
+          maxlength="36"
+          pattern="(?=.*[a-z])(?=.*[A-Z]).{4,}"
+          title="Username must be two words separated by space"
+          required
+        />
+      </label>
+      <label for="user_email_id" class="user-mail">
+        <span class="user-name">Email</span>
+        <input
+          type="email"
+          class="input-mail input"
+          name="user-mail"
+          id="user_email_id"
+          placeholder="tanya.hill@example.com"
+          minlength="5"
+          required
+        />
+      </label>
       <button
-        class="modal-form-btn"
+        class="modal-form-btn button"
         type="submit"
-        aria-required="true"
         data-contact-us-close
         data-result-contact-open
         onclick="return false"
-        disabled
+        role="button"
       >
         Send
       </button>
@@ -93,27 +98,34 @@
 
 <div class="modal-result is-hidden" data-result-contact>
   <div class="modal-result-wrap">
-    <button class="close-btn-icon" data-follow-close>
+    <button class="close-btn-icon" data-result-contact-close>
       <svg class="close-icon" width="12" height="12">
         <use href="/flow-1/assets/modal-66f47ec6.svg#icon-close-button"></use>
       </svg>
     </button>
-    <img
-      class="result-img"
-      src="/flow-1/assets/thank-you-photo-b8111875.png"
-      alt="Grateful flowers"
-      width="188px"
-    />
+    <picture>
+      <source
+        srcset="/flow-1/assets/img@1x-b8111875.png 1x, /flow-1/assets/img@2x-eb91baee.png 2x"
+        type="image/png"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/flow-1/assets/flowers-thanks-tab@1x-c6d85726.png 1x, /flow-1/assets/flowers-thanks-tab@1x-c6d85726.png 2x"
+        type="image/png"
+        media="(max-width:767px)"
+      />
+      <img
+        class="result-img"
+        src="/flow-1/assets/img@1x-b8111875.png"
+        alt="Grateful flowers"
+        width="188"
+      />
+    </picture>
     <strong class="title-result">Thank you!</strong>
     <p class="answer-result">
       We have received your contact details and will reach you soon.
     </p>
-    <button
-      class="modal-form-btn"
-      type="submit"
-      data-result-contact-close
-      disabled
-    >
+    <button class="modal-form-btn" type="submit" data-result-contact-close>
       Continue
     </button>
   </div>
@@ -126,22 +138,26 @@
     <div class="modal-follow-img-wrap">
       <picture>
         <source
-          media="(min-width:1280px)"
           srcset="/flow-1/assets/img-desk428d-17c59d65.jpg 1x, /flow-1/assets/img-desk856d-25e34b90.jpg 2x"
+          type="image/jpg"
+          media="(min-width: 1280px)"
         />
         <source
-          media="(min-width:768px)"
           srcset="/flow-1/assets/img-tab588-496bc293.jpg 1x, /flow-1/assets/img-tab1176-2f649c34.jpg 2x"
+          type="image/jpg"
+          media="(min-width: 768px)"
         />
         <source
-          media="(max-width:767px)"
           srcset="/flow-1/assets/img-mob272-b0d50f4a.jpg 1x, /flow-1/assets/img-mob544-806f3770.jpg 2x"
+          type="image/jpg"
+          media="(max-width: 767px)"
         />
         <img
           class="modal-follow-img"
           src="/flow-1/assets/img-mob272-b0d50f4a.jpg"
           alt="Flowers"
-          width="272px"
+          width="272"
+          loading="lazy"
         />
       </picture>
       <button class="close-btn-icon" type="button" data-follow-close>
@@ -161,13 +177,13 @@
         <label for="user_email_follow" class="user-mail-follow">Email</label>
         <input
           type="email"
-          class="input-mail"
+          class="input-mail input"
           name="user-mail-follow"
           id="user_email_follow"
           placeholder="Your email"
           required
         />
-        <button class="modal-form-btn" type="button" disabled>Subscribe</button>
+        <button class="modal-form-btn button" type="submit">Subscribe</button>
       </form>
     </div>
   </div>
