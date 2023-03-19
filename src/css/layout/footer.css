@@ -18,6 +18,7 @@ background-color: var(--main-black-color);
 .footer-logo-link {
   display: none;
 }
+
 .footer-title {
   color: var(--main-white-color);
   font-weight: 700;
@@ -31,7 +32,14 @@ background-color: var(--main-black-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
+  transform: scale(1);
+  transition: transform 250ms ease-in-out;
 }
+
+.footer-item:hover {
+  transform: scale(1.1);
+}
+
 .footer-item:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -52,17 +60,17 @@ background-color: var(--main-black-color);
 }
 
 /* svg styles -----------------------*/
-.logo-facebook {
+.logo-social {
   width: 28px;
   height: 28px;
   stroke: var(--main-white-color);
   stroke-width: 2px;
+  transform: scale(1);
+  transition: transform 250ms ease-in-out;
 }
-.logo-instagram {
-  width: 28px;
-  height: 28px;
-  stroke: var(--main-white-color);
-  stroke-width: 2px;
+
+.logo-social:hover {
+  transform: scale(1.4);
 }
 
 /* Tablet -- */
@@ -98,7 +106,14 @@ background-color: var(--main-black-color);
     fill: var(--main-white-color);
     width: 72px;
     height: 57px;
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
   }
+  
+  .logo-footer-icon:hover {
+    transform: scale(1.1);
+  }
+
   .footer-nav-box {
     width: 116px;
     margin-left: 210px;
